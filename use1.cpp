@@ -26,3 +26,13 @@ git rm --cached 文件名//表示删除文件
 //删除也要提交推送
 git commit -m "删除远程的编译产物，"
 git push origin main
+
+//新建文件，第一次要绑定github
+git init
+//然后绑定远程仓库
+git remote add origin git@github.com:zjm2005111/c-study.git
+
+//本地把master重命名为main
+git branch - M main
+//然后推送main
+git push - u origin main --force
